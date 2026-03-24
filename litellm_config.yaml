@@ -28,6 +28,19 @@ model_list:
         chat_template_kwargs:
           enable_thinking: true
 
+  - model_name: openai/GLM-5
+    litellm_params:
+      model: openai/GLM-5
+      api_key: "os.environ/OPENAI_API_KEY"
+      api_base: https://code-api.x-aio.com/v1
+  
+  - model_name: openai/Kimi-K2.5
+    litellm_params:
+      model: openai/Kimi-K2.5
+      api_key: "os.environ/OPENAI_API_KEY"
+      api_base: https://code-api.x-aio.com/v1
+
+
   # --- AIHubmix (OpenAI 兼容，一个 Key 使用多种模型) ---
   - model_name: openai/gpt-4o-mini
     litellm_params:
